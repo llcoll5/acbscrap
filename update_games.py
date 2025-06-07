@@ -15,6 +15,10 @@ class GamesUpdater(scraper_funcs.Scraper):
         self.url_base = self.urls_base["games"]
         self.url_to_scrap = self.url_base
 
+    def update_season(self, season:int=None):
+        if season == None:
+            return None
+
 
 
 if __name__ == "__main__":

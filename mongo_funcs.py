@@ -7,29 +7,33 @@ import json
 
 import update_games
 
-load_dotenv()
+OVERRIDE = True
+load_dotenv(override=OVERRIDE)
 
-uri = os.getenv("MONGO_SERVER")
 
-# Create a new client and connect to the server
-client = MongoClient(uri, server_api=ServerApi('1'))
+class Database():
+    def __init__(self):
+        self.uri = os.getenv("MONGO_SERVER")
+        print(f"Connecting to MongoDB at {self.uri}")
+        if not self.uri:
+            raise ValueError("MONGO_SERVER environment variable is not set.")
+        self.client = MongoClient(self.uri, server_api=ServerApi('1'))
+        try:
+            self.client.admin.command('ping')
+            self.db = self.client["ACBScrap"]
+            self.games = self.db["games"]
+            self.pbp = self.db["pbp"]
+            self.boxscore = self.db["boxscore"]
+        except Exception as e:
+            print(f"ERROR: {e}")
 
-# Send a ping to confirm a successful connection
-try:
-    client.admin.command('ping')
-    db = client["ACBScrap"]
-    col = db["games"]
-    games = update_games.GamesUpdater()
+if __name__ == "__main__":
+    db = Database()
     """
     data = games.scrap_url()
     for d in data:
         col.insert_one(d)
     """
-    r = col.find({"id_week":2849})
-    list(map(print, r))
-
-    
-    # print(col.find_one)
-    print("Pinged your deployment. You successfully connected to MongoDB!")
-except Exception as e:
-    print(e)
+    print(f"games: {db.games.count_documents({})}")
+    r = db.games.find({"id_week":2849})
+    # list(map(print, r))
