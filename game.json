@@ -1,0 +1,102 @@
+
+    {
+        "id": 104349, 
+        "id_competition": 1, 
+        "competition": {
+            "name": "Liga Nacional", 
+            "official_name": "Liga Endesa", 
+            "initial_date": -402534000, 
+            "final_date": "None", 
+            "url_image": "https://www.acb.com/Documentos/Cabeceras/logo-competicion-1b.png", 
+            "url_image_negative": "https://www.acb.com/Documentos/Cabeceras/logo-competicion-4a.png"
+        }, 
+        "id_edition": 89, 
+        "edition": {"year": 2024}, 
+        "id_phase": 107, 
+        "phase": {
+            "id": 107, 
+            "description": "Liga Regular", 
+            "abrev": "LR"
+        }, 
+        "id_subphase": 0, 
+        "id_round": 0, 
+        "id_matchweek": 5852, 
+        "id_week": 2849, 
+        "week_description": "Semana 36", 
+        "matchweek_number": "34", 
+        "id_team_local": 4336, 
+        "local_team": {
+            "id_team_denomination": 2611, 
+            "team_actual_name": "Dreamland Gran Canaria", 
+            "team_actual_short_name": "Dreamland GC", 
+            "team_abbrev_name": "DGC", 
+            "media": [
+                {
+                    "id": 1443, 
+                    "id_type": 3, 
+                    "type": "foto_equipo", 
+                    "url": "https://static.acb.com/media/PRO/00/00/47/82/33/0000478233_03.jpg", 
+                    "from_date": 1719792000
+                }, 
+                {
+                    "id": 1442, 
+                    "id_type": 7, 
+                    "type": "logo_negativo", 
+                    "url": "https://static.acb.com/img/25/56/4a/75557.png", 
+                    "from_date": 1719792000
+                }, 
+                {
+                    "id": 1444, 
+                    "id_type": 6, 
+                    "type": "logo", 
+                    "url": "https://static.acb.com/img/2/58/5b/75611.png", 
+                    "from_date": 1719792000
+                }
+            ]
+        }, 
+        "id_team_visitor": 4333,
+        "visitor_team": {
+            "id_team_denomination": 2608, 
+            "team_actual_name": "UCAM Murcia", 
+            "team_actual_short_name": "UCAM Murcia", 
+            "team_abbrev_name": "UCM", 
+            "media": [
+                {
+                    "id": 1450, 
+                    "id_type": 7, 
+                    "type": "logo_negativo", 
+                    "url": "https://static.acb.com/img/www/clubes2024/2425UCAMMurcianegativo.png", 
+                    "from_date": 1719838800
+                }, 
+                {
+                    "id": 1489, 
+                    "id_type": 6, 
+                    "type": "logo", 
+                    "url": "https://static.acb.com/img/www/clubes2024/2425UCAMMurciapositivo.png", 
+                    "from_date": 1720530000
+                }, 
+                {
+                    "id": 1448, 
+                    "id_type": 3, 
+                    "type": "foto_equipo", 
+                    "url": "https://static.acb.com/media/PRO/00/00/48/85/42/0000488542_03.jpg", 
+                    "from_date": 1719792000
+                }
+            ]
+        }, 
+        "score_local": 0, 
+        "score_visitor": 0, 
+        "date": 1748563200, 
+        "time": 66600, 
+        "live": "False", 
+        "finalized": "False", 
+        "selected_players": "False", 
+        "arena": {
+            "name": "Gran Canaria Arena",
+            "town": "Las Palmas de Gran Canaria"
+        }, 
+        "period": "None", 
+        "crono": "None", 
+        "matchweek_descriptor": "Jornada 34", 
+        "Broadcasts": []
+    }
